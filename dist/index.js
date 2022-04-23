@@ -50,19 +50,23 @@ async function run() {
         domainOwner: account,
         repository: repo,
         format: 'maven',
-        package: groupId,
-        namespace: artefactId,
+        namespace: groupId,
+        package: artefactId,
         versions: versions
       });
+
+      try {
+        const response = await client.send(authCommand);
     
-      const response = await client.send(authCommand);
-    
-      if (response.failedVersions != undefined) {
-        core.setOutput('failedVersions', response.failedVersions);
-      }
-    
-      if (response.successfulVersions != undefined) {
-        core.setOutput('successfulVersions', response.successfulVersions);
+        if (response.failedVersions != undefined) {
+          core.setOutput('failedVersions', response.failedVersions);
+        }
+      
+        if (response.successfulVersions != undefined) {
+          core.setOutput('successfulVersions', response.successfulVersions);
+        }  
+      } catch (error) {
+        core.error(error);
       }
     }
   });

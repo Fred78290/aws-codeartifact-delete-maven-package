@@ -8,6 +8,7 @@ const core = __nccwpck_require__(1261);
 const codeArtifact = __nccwpck_require__(64);
 const xpath = __nccwpck_require__(4298);
 const dom = (__nccwpck_require__(8125)/* .DOMParser */ .a)
+const fs = __nccwpck_require__(7147);
 
 function getValue(doc, xpathToSearch) {
   var nodes = xpath.select(xpathToSearch, doc);

@@ -2,6 +2,7 @@ const core = require('@actions/core');
 const codeArtifact = require('@aws-sdk/client-codeartifact');
 const xpath = require('xpath');
 const dom = require('xmldom').DOMParser
+const fs = require('fs');
 
 function getValue(doc, xpathToSearch) {
   var nodes = xpath.select(xpathToSearch, doc);

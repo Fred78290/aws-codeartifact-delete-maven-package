@@ -8,7 +8,7 @@ function getValue(doc, xpathToSearch) {
   var nodes = xpath.select(xpathToSearch, doc);
 
   if (nodes.length) {
-    var node = nodes[i];
+    var node = nodes[0];
     var firstChild = node.firstChild;
 
     if (firstChild) {

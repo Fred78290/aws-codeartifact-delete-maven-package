@@ -2,7 +2,7 @@
 
 Required: `aws-actions/configure-aws-credentials`
 
-Deletes maven package from AWS codeartifact target by the current pom.xml
+Delete maven package from AWS codeartifact targeted by the current pom.xml
 
 ## `domain`
 

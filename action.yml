@@ -1,0 +1,24 @@
+name: aws-codeartifact-delete-package-versions
+description: Delete maven package from codeartifact
+branding:
+  icon: code
+  color: blue
+author: Fred78290
+
+inputs:
+  domain:
+    description: "The name of the domain that contains the package to delete"
+    required: true
+  domain-owner:
+    description: "The 12-digit account number of the AWS account that owns the domain. It does not include dashes or spaces"
+    required: true
+  region:
+    description: "AWS CodeArtifact Region"
+    required: true
+  repository:
+    description: "The name of the repository that contains the package versions to delete"
+    required: true
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
+      

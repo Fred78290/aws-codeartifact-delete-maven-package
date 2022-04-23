@@ -1,4 +1,4 @@
-# aws-codeartifact-delete-package-versions
+# aws-codeartifact-delete-maven-package
 
 Required: `aws-actions/configure-aws-credentials`
 
@@ -33,8 +33,8 @@ Test:
           role-to-assume: arn:aws:iam::*****
           aws-region: us-east-1
           
-      - name: aws-codeartifact-delete-package-versions
-        uses: Fred78290/aws-codeartifact-delete-package-versions@v****
+      - name: aws-codeartifact-delete-maven-package
+        uses: Fred78290/aws-codeartifact-delete-maven-package@v****
         with:
           domain: release
           domain-owner: 123456789012

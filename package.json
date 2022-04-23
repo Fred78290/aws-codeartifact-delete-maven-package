@@ -12,9 +12,9 @@
     "@actions/io": "^1.1.0",
     "@aws-sdk/client-codeartifact": "^3.14.0",
     "aws-sdk": "^2.902.0",
-    "dom": "^0.0.3",
     "fs": "^0.0.1-security",
     "node": "^16.1.0",
+    "xmldom": "^0.6.0",
     "xpath": "^0.0.32"
   },
   "devDependencies": {

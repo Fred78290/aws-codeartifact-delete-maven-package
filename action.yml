@@ -1,4 +1,4 @@
-name: aws-codeartifact-delete-package-versions
+name: aws-codeartifact-delete-maven-package
 description: Delete maven package from codeartifact
 branding:
   icon: code
